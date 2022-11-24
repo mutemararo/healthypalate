@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "311303591987",
+    "project_id": "healthypalate-f95ea",
+    "storage_bucket": "healthypalate-f95ea.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:311303591987:android:2bc06bc04d1bdc58c86b46",
+        "android_client_info": {
+          "package_name": "com.example.healthypalate"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "311303591987-3dk4n3qrh12899rtiu9p7c6mqpmgc2oe.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAitMlpYJkXLD27JYR4pxFU4ha2-jy4cgQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "311303591987-3dk4n3qrh12899rtiu9p7c6mqpmgc2oe.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

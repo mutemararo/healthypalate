@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+        <import type="com.example.healthypalate.R"/>
+
+        <variable
+            name="navModel"
+            type="com.example.healthypalate.ui.models.NavMenuModelItem" />
+
+        <variable
+            name="listener"
+            type="com.example.healthypalate.ui.adapters.BottomNavAdapter.BottonNavListener" />
+    </data>
+
+    <CheckedTextView
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:checked="@{navModel.checked}"
+        android:drawablePadding="32dp"
+        android:ellipsize="end"
+        android:background="?attr/selectableItemBackground"
+        android:fontFamily="@font/varela_round"
+        android:gravity="center_vertical|start"
+        android:lines="1"
+        android:onClick="@{() -> listener.onNavMenuItemClicked(navModel)}"
+        android:paddingStart="32dp"
+        android:paddingEnd="32dp"
+        android:text="@{navModel.nav_title}"
+        android:textColor="@color/color_navigation_drawer_menu_item"
+        android:textSize="20sp"
+        android:drawableStart="@{navModel.nav_icon}"
+        tools:text="Home"
+        app:drawableTint="@color/color_navigation_drawer_menu_item" />
+
+</layout>

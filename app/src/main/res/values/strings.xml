@@ -1,0 +1,57 @@
+<resources>
+    <string name="app_name">HealthyPalate</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="disclaimer">We use this information to generate personalised information for you</string>
+    <string name="back">Back</string>
+    <string name="next">Next</string>
+    <string name="question_gender">What is your gender?</string>
+    <string name="male">Male</string>
+    <string name="female">Female</string>
+    <string name="select">Select</string>
+    <string name="question_dob">What is your Date Of Birth</string>
+    <string name="question_height">What is your height in metres</string>
+    <string name="question_weight">What is your weight in kilograms</string>
+    <string name="finish">finish</string>
+    <string name="bmi_answer">Your B.M.I is</string>
+    <string name="bmi_classification">BMI CLASSIFICATION</string>
+    <string name="popup_daily_tip">Eating too much food calls an undue amount of blood into the stomach causing the limbs and extremities to chill quickly</string>
+    <string name="share">Share</string>
+    <string name="add_own_recipe">Add your own recipe</string>
+    <string name="go_to_metrics">Metrics</string>
+    <string name="ingredients"><br />
+        1. Mealie Meal <br />
+        2. Water<br />
+        3. Vegetables<br />
+        4. Cooking Oil<br />
+        5. Rice</string>
+    <string name="method"><br />
+        1. Mix mealie meal and water<br />
+        2. Mix until they simmer for 15 min<br />
+        3. Mix vegetables and cooking Oil<br />
+        4. Serve and enjoy</string>
+    <string name="bottom_nav_drawer_profile_image_content_desc">profile</string>
+    <string name="bottom_app_bar_logo_content_desc">app logo</string>
+    <string name="bottom_app_bar_chevron_content_desc">expand</string>
+    <string name="navigation_home">Home</string>
+
+    <string name="recipe1">Avocado Salad</string>
+    <string name="recipe2">Rice and Mushroom</string>
+    <string name="recipe3">Herbal Salad</string>
+    <string name="category1">Breakfast</string>
+    <string name="category2">Lunch</string>
+    <string name="category3">Supper</string>
+
+    <string name="note_creation_date">%s</string>
+
+
+    <!--    navigation list items titles-->
+
+    <string name="nav_home">Home</string>
+    <string name="nav_recipes">Recipes</string>
+    <string name="nav_meals">Meals</string>
+    <string name="nav_ingredients">Foods</string>
+    <string name="nav_profile">Profile</string>
+    <string name="notes">Notes</string>
+
+</resources>

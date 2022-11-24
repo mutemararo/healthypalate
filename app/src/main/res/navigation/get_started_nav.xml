@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/get_started_nav"
+    app:startDestination="@id/gender">
+
+    <fragment
+        android:id="@+id/gender"
+        android:name="com.example.healthypalate.ui.getstarted.Gender"
+        android:label="fragment_gender"
+        tools:layout="@layout/fragment_gender" >
+        <action
+            android:id="@+id/action_gender_to_dateOfBirth"
+            app:destination="@id/dateOfBirth" />
+    </fragment>
+    <fragment
+        android:id="@+id/dateOfBirth"
+        android:name="com.example.healthypalate.ui.getstarted.DateOfBirth"
+        android:label="fragment_date_of_birth"
+        tools:layout="@layout/fragment_date_of_birth" >
+        <action
+            android:id="@+id/action_dateOfBirth_to_height"
+            app:destination="@id/height" />
+        <action
+            android:id="@+id/action_dateOfBirth_to_gender"
+            app:destination="@id/gender" />
+    </fragment>
+    <fragment
+        android:id="@+id/weight"
+        android:name="com.example.healthypalate.ui.getstarted.Weight"
+        android:label="fragment_weight"
+        tools:layout="@layout/fragment_weight" >
+        <action
+            android:id="@+id/action_weight_to_BMI"
+            app:destination="@id/BMI" />
+        <action
+            android:id="@+id/action_weight_to_height"
+            app:destination="@id/height" />
+    </fragment>
+    <fragment
+        android:id="@+id/height"
+        android:name="com.example.healthypalate.ui.getstarted.Height"
+        android:label="fragment_height"
+        tools:layout="@layout/fragment_height" >
+        <action
+            android:id="@+id/action_height_to_weight"
+            app:destination="@id/weight" />
+        <action
+            android:id="@+id/action_height_to_dateOfBirth"
+            app:destination="@id/dateOfBirth" />
+    </fragment>
+    <fragment
+        android:id="@+id/BMI"
+        android:name="com.example.healthypalate.ui.getstarted.BMI"
+        android:label="fragment_b_m_i"
+        tools:layout="@layout/fragment_b_m_i" >
+        <action
+            android:id="@+id/action_BMI_to_mainActivity"
+            app:destination="@id/mainActivity" />
+    </fragment>
+    <action
+        android:id="@+id/action_global_gender"
+        app:destination="@id/gender"
+        app:popUpTo="@id/get_started_nav"
+        app:popUpToInclusive="true" />
+    <activity
+        android:id="@+id/mainActivity"
+        android:name="com.example.healthypalate.ui.MainActivity"
+        android:label="activity_main"
+        tools:layout="@layout/activity_main" />
+</navigation>

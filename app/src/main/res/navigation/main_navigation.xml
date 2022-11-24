@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_navigation"
+    app:startDestination="@id/home2">
+
+    <fragment
+        android:id="@+id/home2"
+        android:name="com.example.healthypalate.ui.home.Home"
+        android:label="fragment_home"
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/action_home2_to_recipesView"
+            app:destination="@id/recipesView" />
+        <action
+            android:id="@+id/action_home2_to_noteEdit2"
+            app:destination="@id/noteEdit" />
+        <action
+            android:id="@+id/action_home2_to_fragmentMeals"
+            app:destination="@id/fragmentMeals" />
+        <action
+            android:id="@+id/action_home2_to_notesList2"
+            app:destination="@id/notesList2" />
+        <action
+            android:id="@+id/action_home2_to_metrics"
+            app:destination="@id/metrics" />
+    </fragment>
+    <fragment
+        android:id="@+id/recipesFragment"
+        android:name="com.example.healthypalate.ui.home.RecipesFragment"
+        android:label="fragment_recipes"
+        tools:layout="@layout/fragment_recipes" >
+        <action
+            android:id="@+id/action_recipesFragment_to_recipesView"
+            app:destination="@id/recipesView" />
+    </fragment>
+    <fragment
+        android:id="@+id/recipesView"
+        android:name="com.example.healthypalate.ui.home.RecipesView"
+        android:label="fragment_recipes_view"
+        tools:layout="@layout/fragment_recipes_view" >
+        <argument
+            android:name="recipe_title"
+            app:argType="string" />
+    </fragment>
+    <fragment
+        android:id="@+id/foodAdditives"
+        android:name="com.example.healthypalate.ui.home.FoodAdditives"
+        android:label="fragment_food_additives"
+        tools:layout="@layout/fragment_food_additives" />
+    <fragment
+        android:id="@+id/fragmentMeals"
+        android:name="com.example.healthypalate.ui.diary.FragmentMeals"
+        android:label="fragment_meals"
+        tools:layout="@layout/fragment_meals" >
+        <action
+            android:id="@+id/action_fragmentMeals_to_mealView2"
+            app:destination="@id/mealView2" />
+    </fragment>
+    <action
+        android:id="@+id/action_global_home2"
+        app:destination="@id/home2"
+        app:popUpTo="@id/main_navigation"
+        app:popUpToInclusive="true" />
+    <action
+        android:id="@+id/action_global_recipesFragment"
+        app:destination="@id/recipesFragment" />
+    <action
+        android:id="@+id/action_global_foodAdditives"
+        app:destination="@id/foodAdditives" />
+    <fragment
+        android:id="@+id/mealView2"
+        android:name="com.example.healthypalate.ui.diary.MealView"
+        android:label="fragment_meal_view"
+        tools:layout="@layout/fragment_meal_view" />
+    <action
+        android:id="@+id/action_global_fragmentMeals"
+        app:destination="@id/fragmentMeals" />
+    <fragment
+        android:id="@+id/noteEdit"
+        android:name="com.example.healthypalate.ui.diary.NoteEdit"
+        android:label="fragment_note_edit"
+        tools:layout="@layout/fragment_note_edit" >
+        <action
+            android:id="@+id/action_noteEdit2_to_home2"
+            app:destination="@id/home2" />
+        <argument
+            android:name="note_id"
+            app:argType="integer"
+            android:defaultValue="-1" />
+        <action
+            android:id="@+id/action_noteEdit_to_notesList2"
+            app:destination="@id/notesList2" />
+    </fragment>
+    <fragment
+        android:id="@+id/profile"
+        android:name="com.example.healthypalate.ui.home.Profile"
+        android:label="fragment_profile"
+        tools:layout="@layout/fragment_profile" />
+    <action
+        android:id="@+id/action_global_profile"
+        app:destination="@id/profile" />
+    <fragment
+        android:id="@+id/notesList2"
+        android:name="com.example.healthypalate.ui.diary.NotesList"
+        android:label="fragment_notes_list"
+        tools:layout="@layout/fragment_notes_list" >
+        <action
+            android:id="@+id/action_notesList2_to_noteEdit"
+            app:destination="@id/noteEdit" />
+    </fragment>
+    <fragment
+        android:id="@+id/metrics"
+        android:name="com.example.healthypalate.ui.diary.Metrics"
+        android:label="fragment_metrics"
+        tools:layout="@layout/fragment_metrics" />
+</navigation>
