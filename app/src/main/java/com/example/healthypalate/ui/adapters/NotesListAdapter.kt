@@ -19,7 +19,7 @@ class NotesListAdapter(val onItemClick: (NotesTable) -> Unit) : ListAdapter<Note
     }
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): NotesListViewHolder {
-        val view = NoteItemBinding.inflate(LayoutInflater.from(parent.context))
+        val view = NoteItemBinding.inflate(LayoutInflater.from(parent.context), parent, false)
         return NotesListViewHolder(view)
     }
 

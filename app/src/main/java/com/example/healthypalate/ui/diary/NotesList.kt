@@ -44,12 +44,14 @@ class NotesList : Fragment() {
             val direction = NotesListDirections.actionNotesList2ToNoteEdit(it.id)
             findNavController().navigate(direction)
         }
+
+        binding.notesList.adapter = adapter
         viewModel.allNotes.observe(this.viewLifecycleOwner){note ->
             note.let {
                 adapter.submitList(it)
             }
         }
 
-        binding.notesList.adapter = adapter
+
     }
 }
